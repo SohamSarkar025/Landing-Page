@@ -26,3 +26,15 @@ btnPopup3.addEventListener('click', ()=> {
 iconClose.addEventListener('click', ()=> {
     wrapper.classList.remove('active-popup');
 });
+
+
+// Include Ionicons library
+const ioniconsModule = document.createElement("script");
+ioniconsModule.type = "module";
+ioniconsModule.src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js";
+document.head.appendChild(ioniconsModule);
+
+const ioniconsNoModule = document.createElement("script");
+ioniconsNoModule.setAttribute("nomodule", "");
+ioniconsNoModule.src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js";
+document.head.appendChild(ioniconsNoModule);
